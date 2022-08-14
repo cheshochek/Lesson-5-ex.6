@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    font-family: 'Open Sans';
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.row {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.block {
+    text-align: center;
+    padding: 0 50px;
+    display: flex;
+    align-items: flex-end;
+}
+.block-grey {
+    background-color: #C0C0C0;
+    margin-top: calc(1 * 100vh / 3);
+}
+.block-yellow {
+    background-color: #FED700;
+}
+.block-orange {
+    background-color: #CD8032;
+    margin-top: calc(2 * 100vh / 3);
+}
+.block__number {
+    margin-bottom: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #030100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block__number-grey {
+    color: #C0C0C0;
+}
+.block__number-yellow {
+    color: #FED700;
+}
+.block__number-orange {
+    color: #CD8032;
+}
+.column {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+    padding: 0 350px;
+}
+.column__block {
+    display: inline-block;
+    width: calc(100%/3);
+    padding: calc((100vh / 3 - 50px) / 2) calc((100% / 3 - 50px) / 2);
+    font-size: 14px;
+}
+.column__block-number {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #030100;
+}
+.block-1 {
+    height: calc(100vh / 3);
+    background-image: linear-gradient(to right, transparent calc(100%/3), #FED700 calc(100%/3), #FED700 calc(100%*2/3), transparent calc(100%*2/3));
+}
+.block-2 {
+    height: calc(100vh / 3);
+    background-image: linear-gradient(to right, #C0C0C0 calc(100%/3), #FED700 calc(100%/3), #FED700 calc(100%*2/3), transparent calc(100%*2/3));
+}
+.block-3 {
+    height: calc(100vh / 3);
+    background-image: linear-gradient(to right, #C0C0C0 calc(100%/3), #FED700 calc(100%/3), #FED700 calc(100%*2/3), #CD8032 calc(100%*2/3));
+    font-size: 0;
+    text-align: center;
+}
